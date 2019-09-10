@@ -22,6 +22,114 @@
         android:id="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_above="@+id/keypad"
+        android:gravity="bottom|right"
+        android:hint="0"
+        android:padding="10dp"
+        android:textSize="@dimen/textSize"
+
         />
 
+    <LinearLayout
+        android:id="@+id/keypad"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_RorD"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+                android:text="@string/RAD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+
+                 />
+            <Button
+                android:id="@+id/btn_root"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/layout_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+
+                android:text="@string/root"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"/>
+
+
+            <!--                android:onClick="onRootClick"-->
+            <Button
+                android:id="@+id/btn_power"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+<!--            android:onClick="onPowerClick"-->
+
+
+
+
+            <Button
+                android:id="@+id/btn_square"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+
+                android:text="@string/square"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+<!--            android:onClick="onSquareClick"-->
+
+
+            <Button
+                android:id="@+id/btn_factorial"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+
+                android:text="@string/factorial"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+<!--            android:onClick="onClickFactorial"-->
+            <Button
+                android:id="@+id/btn_inverse"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/buttonMargin"
+                android:layout_weight="1"
+                android:background="@color/horizontal_btn_color"
+
+                android:text="@string/inverse"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+<!--            android:onClick="onClickInverse"-->
+
+        </LinearLayout>
+    </HorizontalScrollView>
 </RelativeLayout>
